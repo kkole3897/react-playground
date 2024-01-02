@@ -6,5 +6,6 @@
       "warn",
       { "allowConstantExport": true }
     ]
-  }
+  },
+  "extends": ["plugin:@tanstack/eslint-plugin-query/recommended"]
 }

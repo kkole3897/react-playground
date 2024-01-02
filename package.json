@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.17.1",
     "@types/node": "^20.10.4",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.17",
@@ -33,5 +34,8 @@
     "node": ">=20.10.0",
     "pnpm": "8.12.0"
   },
-  "packageManager": "pnpm@8.12.0"
+  "packageManager": "pnpm@8.12.0",
+  "dependencies": {
+    "@tanstack/react-query": "^5.17.1"
+  }
 }
