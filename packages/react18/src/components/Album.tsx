@@ -1,3 +1,5 @@
+import { getAlbumData } from "@/api/album";
+
 type Status = "pending" | "error" | "success";
 
 function wrapPromise<T>(promise: Promise<T>) {
@@ -28,12 +30,6 @@ function wrapPromise<T>(promise: Promise<T>) {
   };
 
   return { read };
-}
-
-function getAlbumData() {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve({ name: "hello" }), 3000);
-  });
 }
 
 const resource = wrapPromise(getAlbumData());
